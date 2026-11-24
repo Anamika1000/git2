@@ -16,7 +16,7 @@ pipeline {
                     ls -la
                 '''
 
-                stash name: 'webpage', includes: 'portfolio-test/**'
+                stash name: 'webpage', includes: 'Anamika1000/git2/**'
             }
         }
 
@@ -32,7 +32,7 @@ pipeline {
 
                 sh '''
                     sudo rm -rf /var/www/html/*
-                    sudo cp -r portfolio-test/* /var/www/html/
+                    sudo cp -r Anamika1000/git2/* /var/www/html/
                     ls -la /var/www/html/
                 '''
             }
